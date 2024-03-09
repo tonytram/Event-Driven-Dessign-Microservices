@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  consumer1:
+    build:
+      target: mydebug
+  
+  producer1:
+    build:
+      target: mydebug
