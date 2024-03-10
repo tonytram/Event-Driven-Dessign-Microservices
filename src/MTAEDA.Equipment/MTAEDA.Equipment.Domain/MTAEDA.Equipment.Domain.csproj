@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -15,11 +15,13 @@
   <ItemGroup>
     <PackageReference Include="CloudNative.CloudEvents" Version="2.7.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
+    <Reference Include="MTAEDA.Core">
+      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -1,19 +1,12 @@
-﻿using CloudNative.CloudEvents;
-using Confluent.Kafka;
+﻿using Confluent.Kafka;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MTAEDA.Core.Domain.Events;
-using MTAEDA.Core.Utility;
 using MTAEDA.Equipment.API.Controllers;
-using MTAEDA.Equipment.Domain.Aggregates;
 using MTAEDA.Equipment.Domain.Events;
 using Newtonsoft.Json;
 using Polly;
-using Polly.Retry;
-using Polly.Wrap;
 using System;
-using System.Diagnostics;
-using System.Net;
 using System.Threading.Tasks;
 
 [Route("/api/[controller]")]

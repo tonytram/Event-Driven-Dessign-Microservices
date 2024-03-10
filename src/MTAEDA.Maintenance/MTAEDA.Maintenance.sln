@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{27A9213D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Maintenance.Query.API", "MTAEDA.Maintenance.Query.API\MTAEDA.Maintenance.Query.API.csproj", "{139A1AAA-CE89-47CC-B048-ADD9E7B09D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Maintenance.Listener", "MTAEDA.Maintenance.Listener\MTAEDA.Maintenance.Listener.csproj", "{C39CB09B-F484-45CC-B440-489A8E13A542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Maintenance.Listener", "MTAEDA.Maintenance.Listener\MTAEDA.Maintenance.Listener.csproj", "{C39CB09B-F484-45CC-B440-489A8E13A542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

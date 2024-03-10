@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
@@ -9,16 +9,20 @@
     <PackageReference Include="Azure.Messaging.EventHubs" Version="5.11.1" />
     <PackageReference Include="CloudNative.CloudEvents" Version="2.7.1" />
     <PackageReference Include="Confluent.Kafka" Version="2.3.0" />
-    <PackageReference Include="EventStore.Client" Version="22.0.0" />
-    <PackageReference Include="EventStore.Client.Grpc.Streams" Version="22.0.0" />
-    <PackageReference Include="Grpc.Net.Client" Version="2.50.0" />
+    <PackageReference Include="EventStore.Client.Grpc.Streams" Version="23.2.1" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.61.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Domain\MTAEDA.Equipment.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MTAEDA.Core">
+      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
