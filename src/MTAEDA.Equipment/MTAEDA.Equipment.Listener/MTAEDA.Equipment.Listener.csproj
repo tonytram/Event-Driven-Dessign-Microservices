@@ -8,19 +8,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.21.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Infrastructure\MTAEDA.Equipment.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="MTAEDA.Core">
-      <HintPath>..\..\..\..\..\..\..\..\code\libraries\net7.0\MTAEDA.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

@@ -32,6 +32,11 @@ namespace MTAEDA.Equipment.Infrastructure
             throw new NotImplementedException();
         }
 
+        public Task Send<TRequest>(TRequest request, CancellationToken cancellationToken = default) where TRequest : IRequest
+        {
+            throw new NotImplementedException();
+        }
+
         IAsyncEnumerable<TResponse> ISender.CreateStream<TResponse>(IStreamRequest<TResponse> request, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
