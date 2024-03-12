@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "MTAEDA.Core\MTAEDA.Core.csproj", "{E066C137-8BDB-4EBA-AD59-700D96E04CE4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Equipment", "Equipment", "{02AE412A-401B-41A1-90E6-B59B81E94118}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Equipment.Command.API", "MTAEDA.Equipment\MTAEDA.Equipment.API\MTAEDA.Equipment.Command.API.csproj", "{F6F7C433-A694-4473-8C69-5C6242FE2F24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Equipment.Command.API", "MTAEDA.Equipment\MTAEDA.Equipment.Command.API\MTAEDA.Equipment.Command.API.csproj", "{F6F7C433-A694-4473-8C69-5C6242FE2F24}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Equipment.Domain", "MTAEDA.Equipment\MTAEDA.Equipment.Domain\MTAEDA.Equipment.Domain.csproj", "{DFEBB32C-E918-49B8-9871-D3BBDBBB6A8B}"
 EndProject
@@ -19,16 +17,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Equipment.Query.API"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Equipment.RetryFailback", "MTAEDA.Equipment\MTAEDA.Equipment.RetryFailback\MTAEDA.Equipment.RetryFailback.csproj", "{D16E24C0-8374-4251-96A8-F21C8E097EB1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "MTAEDA.Core\MTAEDA.Core.csproj", "{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9460B9C6-6492-4EBF-AA0C-FBFDF806EB2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E066C137-8BDB-4EBA-AD59-700D96E04CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E066C137-8BDB-4EBA-AD59-700D96E04CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E066C137-8BDB-4EBA-AD59-700D96E04CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E066C137-8BDB-4EBA-AD59-700D96E04CE4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F6F7C433-A694-4473-8C69-5C6242FE2F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F6F7C433-A694-4473-8C69-5C6242FE2F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6F7C433-A694-4473-8C69-5C6242FE2F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,6 +51,14 @@ Global
 		{D16E24C0-8374-4251-96A8-F21C8E097EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16E24C0-8374-4251-96A8-F21C8E097EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16E24C0-8374-4251-96A8-F21C8E097EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9460B9C6-6492-4EBF-AA0C-FBFDF806EB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9460B9C6-6492-4EBF-AA0C-FBFDF806EB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9460B9C6-6492-4EBF-AA0C-FBFDF806EB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9460B9C6-6492-4EBF-AA0C-FBFDF806EB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{1F65968B-0DEE-46E8-B273-8DC718A7ACDA} = {02AE412A-401B-41A1-90E6-B59B81E94118}
 		{BDB50768-BD8E-41F6-AA4A-6FE907544DEC} = {02AE412A-401B-41A1-90E6-B59B81E94118}
 		{D16E24C0-8374-4251-96A8-F21C8E097EB1} = {02AE412A-401B-41A1-90E6-B59B81E94118}
+		{E6DCF31B-73DE-4ECE-9E9F-248E6D5CACD1} = {02AE412A-401B-41A1-90E6-B59B81E94118}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CF34A4A-DFF5-4709-8AB9-3C37F7C83801}

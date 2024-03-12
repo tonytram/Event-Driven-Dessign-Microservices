@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "mtaeda.equipment.command.api": "StartDebugging",
+        "mtaeda.equipment.query.api": "StartDebugging",
+        "mtaeda.equipment.listener": "StartDebugging"
+      }
+    }
+  }
+}

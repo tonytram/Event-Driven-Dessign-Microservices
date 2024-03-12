@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,13 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Infrastructure\MTAEDA.Equipment.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="MTAEDA.Core">
-      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

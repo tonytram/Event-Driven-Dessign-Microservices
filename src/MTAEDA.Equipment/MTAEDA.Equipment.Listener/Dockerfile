@@ -1,20 +1,24 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/runtime:7.0 AS base
+FROM mcr.microsoft.com/dotnet/runtime:8.0 AS base
+USER app
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["MTAEDA.Equipment.Listener/MTAEDA.Equipment.Listener.csproj", "MTAEDA.Equipment.Listener/"]
-COPY ["MTAEDA.Equipment.Infrastructure/MTAEDA.Equipment.Infrastructure.csproj", "MTAEDA.Equipment.Infrastructure/"]
-COPY ["MTAEDA.Equipment.Domain/MTAEDA.Equipment.Domain.csproj", "MTAEDA.Equipment.Domain/"]
-RUN dotnet restore "MTAEDA.Equipment.Listener/MTAEDA.Equipment.Listener.csproj"
+COPY ["MTAEDA.Equipment/MTAEDA.Equipment.Listener/MTAEDA.Equipment.Listener.csproj", "MTAEDA.Equipment/MTAEDA.Equipment.Listener/"]
+COPY ["MTAEDA.Core/MTAEDA.Core.csproj", "MTAEDA.Core/"]
+COPY ["MTAEDA.Equipment/MTAEDA.Equipment.Infrastructure/MTAEDA.Equipment.Infrastructure.csproj", "MTAEDA.Equipment/MTAEDA.Equipment.Infrastructure/"]
+COPY ["MTAEDA.Equipment/MTAEDA.Equipment.Domain/MTAEDA.Equipment.Domain.csproj", "MTAEDA.Equipment/MTAEDA.Equipment.Domain/"]
+RUN dotnet restore "./MTAEDA.Equipment/MTAEDA.Equipment.Listener/MTAEDA.Equipment.Listener.csproj"
 COPY . .
-WORKDIR "/src/MTAEDA.Equipment.Listener"
-RUN dotnet build "MTAEDA.Equipment.Listener.csproj" -c Release -o /app/build
+WORKDIR "/src/MTAEDA.Equipment/MTAEDA.Equipment.Listener"
+RUN dotnet build "./MTAEDA.Equipment.Listener.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "MTAEDA.Equipment.Listener.csproj" -c Release -o /app/publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./MTAEDA.Equipment.Listener.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app

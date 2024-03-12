@@ -1,0 +1,40 @@
+version: '3.4'
+
+services:
+  mtaeda.equipment.command.api:
+    image: ${DOCKER_REGISTRY-}mtaeda-equipment-command-api
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Command.API/Dockerfile
+
+  mtaeda.equipment.query.api:
+    image: ${DOCKER_REGISTRY-}mtaeda-equipment-query-api
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Query.API/Dockerfile
+
+
+  mtaeda.equipment.listener:
+    image: ${DOCKER_REGISTRY-}mtaeda-equipment-listener
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Listener/Dockerfile
+
+  mtaeda.identification.command.api:
+    image: ${DOCKER_REGISTRY-}mtaeda-identification-command-api
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Command.API/Dockerfile
+
+  mtaeda.identification.query.api:
+    image: ${DOCKER_REGISTRY-}mtaeda-identification-query-api
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Query.API/Dockerfile
+
+  mtaeda.maintenance.command.api:
+    image: ${DOCKER_REGISTRY-}mtaeda-maintenance-command-api
+    build:
+      context: .
+      dockerfile: ./MTAEDA.Maintenance/MTAEDA.Maintenance.Command.API/Dockerfile
+

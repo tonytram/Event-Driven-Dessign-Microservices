@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>98ec3076-6068-4e20-b8d7-88de7ff43c8d</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,14 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Domain\MTAEDA.Equipment.Domain.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Infrastructure\MTAEDA.Equipment.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="MTAEDA.Core">
-      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

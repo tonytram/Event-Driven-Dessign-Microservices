@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>9d1966ff-3d6c-40fd-a79d-84e75073a2ec</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

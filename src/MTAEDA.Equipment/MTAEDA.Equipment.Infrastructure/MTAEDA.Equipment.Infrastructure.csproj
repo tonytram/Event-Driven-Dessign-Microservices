@@ -16,13 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
     <ProjectReference Include="..\MTAEDA.Equipment.Domain\MTAEDA.Equipment.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="MTAEDA.Core">
-      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
