@@ -17,9 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MTAEDA.Core">
-      <HintPath>..\..\MTAEDA.Core\bin\Debug\net7.0\MTAEDA.Core.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\MTAEDA.Core\MTAEDA.Core.csproj" />
   </ItemGroup>
 
 </Project>

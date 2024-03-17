@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Passenger.Command.AP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Passenger.Query.API", "MTAEDA.Passenger.Query.API\MTAEDA.Passenger.Query.API.csproj", "{28A1F136-14A1-404F-83A2-E8000BA5296C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Passenger.Listener", "MTAEDA.Passenger.Listener\MTAEDA.Passenger.Listener.csproj", "{3173CD7E-8704-4BEB-A7D0-983EDFA6305B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Passenger.Listener", "MTAEDA.Passenger.Listener\MTAEDA.Passenger.Listener.csproj", "{3173CD7E-8704-4BEB-A7D0-983EDFA6305B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "..\MTAEDA.Core\MTAEDA.Core.csproj", "{9672AD37-368D-4D75-9C0D-16AFFE55C286}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{3173CD7E-8704-4BEB-A7D0-983EDFA6305B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3173CD7E-8704-4BEB-A7D0-983EDFA6305B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3173CD7E-8704-4BEB-A7D0-983EDFA6305B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9672AD37-368D-4D75-9C0D-16AFFE55C286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9672AD37-368D-4D75-9C0D-16AFFE55C286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9672AD37-368D-4D75-9C0D-16AFFE55C286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9672AD37-368D-4D75-9C0D-16AFFE55C286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

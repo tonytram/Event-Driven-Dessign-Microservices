@@ -11,15 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listeners", "Listeners", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FAED0D51-1B24-47D6-A98E-501473F373BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Notification.Domain", "MTAEDA.Notification.Domain\MTAEDA.Notification.Domain.csproj", "{07778BC3-03BF-4D18-8332-9CA5BE1F09AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Notification.Domain", "MTAEDA.Notification.Domain\MTAEDA.Notification.Domain.csproj", "{07778BC3-03BF-4D18-8332-9CA5BE1F09AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Notification.Infrastructure", "MTAEDA.Notification.Infrastructure\MTAEDA.Notification.Infrastructure.csproj", "{A749AE7B-3529-48A6-9830-90A01E3D237D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Notification.Infrastructure", "MTAEDA.Notification.Infrastructure\MTAEDA.Notification.Infrastructure.csproj", "{A749AE7B-3529-48A6-9830-90A01E3D237D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Notification.Listener", "MTAEDA.Notification.Listener\MTAEDA.Notification.Listener.csproj", "{8C2CE495-5EE6-43FF-8B78-63DCE0EE7DFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Notification.Listener", "MTAEDA.Notification.Listener\MTAEDA.Notification.Listener.csproj", "{8C2CE495-5EE6-43FF-8B78-63DCE0EE7DFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Notification.Command.API", "MTAEDA.Notification.Command.API\MTAEDA.Notification.Command.API.csproj", "{67F6EC0F-F372-4A14-92DE-00508F8F1B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Notification.Command.API", "MTAEDA.Notification.Command.API\MTAEDA.Notification.Command.API.csproj", "{67F6EC0F-F372-4A14-92DE-00508F8F1B10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAEDA.Notification.Query.API", "MTAEDA.Notification.Query.API\MTAEDA.Notification.Query.API.csproj", "{B1A5B219-0C67-4EAA-946B-1815EC966C18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Notification.Query.API", "MTAEDA.Notification.Query.API\MTAEDA.Notification.Query.API.csproj", "{B1A5B219-0C67-4EAA-946B-1815EC966C18}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "..\MTAEDA.Core\MTAEDA.Core.csproj", "{4EC10240-E191-4A3F-ADAC-879ADE92E704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{B1A5B219-0C67-4EAA-946B-1815EC966C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1A5B219-0C67-4EAA-946B-1815EC966C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1A5B219-0C67-4EAA-946B-1815EC966C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC10240-E191-4A3F-ADAC-879ADE92E704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC10240-E191-4A3F-ADAC-879ADE92E704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC10240-E191-4A3F-ADAC-879ADE92E704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC10240-E191-4A3F-ADAC-879ADE92E704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

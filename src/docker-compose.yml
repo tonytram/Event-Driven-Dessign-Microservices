@@ -14,27 +14,74 @@ services:
       dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Query.API/Dockerfile
 
 
-  mtaeda.equipment.listener:
-    image: ${DOCKER_REGISTRY-}mtaeda-equipment-listener
-    build:
-      context: .
-      dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Listener/Dockerfile
+  # mtaeda.equipment.listener:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-equipment-listener
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Equipment/MTAEDA.Equipment.Listener/Dockerfile
 
-  mtaeda.identification.command.api:
-    image: ${DOCKER_REGISTRY-}mtaeda-identification-command-api
-    build:
-      context: .
-      dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Command.API/Dockerfile
+  # mtaeda.identification.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-identification-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Command.API/Dockerfile
 
-  mtaeda.identification.query.api:
-    image: ${DOCKER_REGISTRY-}mtaeda-identification-query-api
-    build:
-      context: .
-      dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Query.API/Dockerfile
+  # mtaeda.identification.query.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-identification-query-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Identification/MTAEDA.Identification.Query.API/Dockerfile
 
-  mtaeda.maintenance.command.api:
-    image: ${DOCKER_REGISTRY-}mtaeda-maintenance-command-api
-    build:
-      context: .
-      dockerfile: ./MTAEDA.Maintenance/MTAEDA.Maintenance.Command.API/Dockerfile
+  # mtaeda.maintenance.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-maintenance-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Maintenance/MTAEDA.Maintenance.Command.API/Dockerfile
 
+  # mtaeda.notification.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-notification-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Notification/MTAEDA.Notification.Command.API/Dockerfile
+
+  # mtaeda.notification.query.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-notification-query-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Notification/MTAEDA.Notification.Query.API/Dockerfile
+
+  # mtaeda.passenger.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-passenger-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Passenger/MTAEDA.Passenger.Command.API/Dockerfile
+
+  # mtaeda.passenger.query.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-passenger-query-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Passenger/MTAEDA.Passenger.Query.API/Dockerfile
+
+  # mtaeda.scheduling.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-scheduling-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Scheduling/MTAEDA.Scheduling.Command.API/Dockerfile
+
+  # mtaeda.scheduling.query.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-scheduling-query-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Scheduling/MTAEDA.Scheduling.Query.API/Dockerfile
+
+  # mtaeda.station.command.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-station-command-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Station/MTAEDA.Station.Command.API/Dockerfile
+
+  # mtaeda.station.query.api:
+  #   image: ${DOCKER_REGISTRY-}mtaeda-station-query-api
+  #   build:
+  #     context: .
+  #     dockerfile: ./MTAEDA.Station/MTAEDA.Station.Query.API/Dockerfile

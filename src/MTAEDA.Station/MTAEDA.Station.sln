@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Station.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Station.Listener", "MTAEDA.Station.Listener\MTAEDA.Station.Listener.csproj", "{DFB3086E-16E6-4B23-AEDE-1B562CC54B03}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "..\MTAEDA.Core\MTAEDA.Core.csproj", "{FDE56C31-8808-44D1-90ED-637CD70E5AFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{DFB3086E-16E6-4B23-AEDE-1B562CC54B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFB3086E-16E6-4B23-AEDE-1B562CC54B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFB3086E-16E6-4B23-AEDE-1B562CC54B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE56C31-8808-44D1-90ED-637CD70E5AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE56C31-8808-44D1-90ED-637CD70E5AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE56C31-8808-44D1-90ED-637CD70E5AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE56C31-8808-44D1-90ED-637CD70E5AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

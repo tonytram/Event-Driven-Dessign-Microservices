@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Scheduling.Infrastru
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Scheduling.Listener", "MTAEDA.Scheduling.Listener\MTAEDA.Scheduling.Listener.csproj", "{DDDD2AA6-60CD-40CF-BF47-D2326959CB02}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MTAEDA.Core", "..\MTAEDA.Core\MTAEDA.Core.csproj", "{480F455F-A048-49EA-B4AF-BF2B4599A381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{DDDD2AA6-60CD-40CF-BF47-D2326959CB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDDD2AA6-60CD-40CF-BF47-D2326959CB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDDD2AA6-60CD-40CF-BF47-D2326959CB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480F455F-A048-49EA-B4AF-BF2B4599A381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480F455F-A048-49EA-B4AF-BF2B4599A381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480F455F-A048-49EA-B4AF-BF2B4599A381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480F455F-A048-49EA-B4AF-BF2B4599A381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

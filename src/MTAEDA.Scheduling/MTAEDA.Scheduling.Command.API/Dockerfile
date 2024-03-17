@@ -1,22 +1,22 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+EXPOSE 8081
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["MTAEDA.Notification.Command.API/MTAEDA.Notification.Command.API.csproj", "MTAEDA.Notification.Command.API/"]
-RUN dotnet restore "MTAEDA.Notification.Command.API/MTAEDA.Notification.Command.API.csproj"
+COPY ["MTAEDA.Scheduling/MTAEDA.Scheduling.Command.API/MTAEDA.Scheduling.Command.API.csproj", "MTAEDA.Scheduling/MTAEDA.Scheduling.Command.API/"]
+RUN dotnet restore "MTAEDA.Scheduling/MTAEDA.Scheduling.Command.API/MTAEDA.Scheduling.Command.API.csproj"
 COPY . .
-WORKDIR "/src/MTAEDA.Notification.Command.API"
-RUN dotnet build "MTAEDA.Notification.Command.API.csproj" -c Release -o /app/build
+WORKDIR "/src/MTAEDA.Scheduling/MTAEDA.Scheduling.Command.API"
+RUN dotnet build "MTAEDA.Scheduling.Command.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "MTAEDA.Notification.Command.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "MTAEDA.Scheduling.Command.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "MTAEDA.Notification.Command.API.dll"]
+ENTRYPOINT ["dotnet", "MTAEDA.Scheduling.Command.API.dll"]
